@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    #shortM {
+        padding: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .bbton {
+        padding: 10px;
+        padding-bottom: 10px;
+    }
+</style>
+
+
+<body>
+
+    <div id="menu" class="w3-container">
+        <h2>Animated Dropdown</h2>
+        <p>Use any of the w3-animate-classes to fade, zoom or slide in the dropdown content (w3-animate-zoom|opacity|top|bottom|left|right).</p>
+        <div id="shortM">
+            <div class="bbton">
+                <button onclick="myFunction()"><span class="glyphicon glyphicon-search"></span></button>
+            </div>
+            <div class="bbton">
+                <button onclick="myFunction()"><span class="glyphicon glyphicon-search"></span></button>
+            </div>
+            <div class="bbton">
+                <button onclick="myFunction()"><span class="glyphicon glyphicon-search"></span></button>
+            </div>
+            <div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom">
+                <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                <a href="#" class="w3-bar-item w3-button">Link 3</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        var button = document.getElementById("shortM");
+        var x = document.getElementById("Demo");
+
+
+        function myFunction() {
+            var menu = document.getElementById("menu");
+            x.style.left = button.style.right;
+
+            x.style.width = 200 + "px";
+            x.style.height = 200 + "px";
+            x.style.overflow = "scroll";
+            // x.style.bottom = 50 + "%";
+            //  x.style.right = 50 + "%";
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        //https://www.w3schools.com/w3css/w3css_dropdowns.asp
+    </script>
+
+</body>
+
+</html>

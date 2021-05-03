@@ -1,0 +1,198 @@
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    .container {
+        border-collapse: separate;
+        border-spacing: 15px;
+    }
+    
+    .Out-button {
+        flex-direction: row;
+        display: flex;
+        background: scroll;
+    }
+    
+    #inner-container {
+        max-width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: scroll;
+        background-color: black;
+        opacity: 1;
+        transition-property: width;
+        transition-duration: 2s;
+        visibility: hidden;
+        overflow: hidden;
+        border-radius: 25px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    
+    .content {
+        padding: 10px;
+        color: whitesmoke;
+        cursor: pointer;
+        margin: 10px;
+        padding-right: 10px;
+        background-color: red;
+        border-radius: 25px;
+    }
+    
+    .content:hover {
+        background-color: yellowgreen;
+    }
+    
+    #final {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #btn {
+        border-radius: 25px;
+        background-color: green;
+        justify-content: center;
+        height: 50px;
+        width: 100px;
+    }
+    
+    #demo {
+        position: absolute;
+        overflow: scroll;
+        width: 200px;
+        height: 200px;
+    }
+    
+    #menu {
+        display: flex;
+        right: 0px;
+    }
+    
+    .bbton {
+        padding: 10px;
+        padding-bottom: 10px;
+    }
+    
+    #shortM {
+        position: absolute;
+        margin: 20px;
+        width: auto;
+        right: 0px;
+    }
+</style>
+
+<body>
+    <div id="final">
+        <button type="button" class="btn btn-dark" id="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
+            <path d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"/>
+          </svg> Menu</button>
+        <div class="Out-button">
+
+            <div id="inner-container">
+                <div class="content"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                    <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                    <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+                  </svg></div>
+                <div class="content"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                    <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                    <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+                  </svg></div>
+                <div class="content"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                    <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                    <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+                  </svg></div>
+                <div class="content"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                    <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                    <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+                  </svg></div>
+                <div class="content"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                    <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                    <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+                  </svg></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="menu">
+        <div id="shortM">
+            <div class="bbton">
+                <button onclick="myFunction()"><span class="glyphicon glyphicon-search"></span></button>
+            </div>
+            <div class="bbton">
+                <button onclick="myFunction()"><span class="glyphicon glyphicon-search"></span></button>
+            </div>
+            <div class="bbton">
+                <button onclick="myFunction()"><span class="glyphicon glyphicon-search"></span></button>
+            </div>
+
+
+        </div>
+        <div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom">
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+    </div>
+    <script>
+        var info = document.getElementById("inner-container");
+        var click = document.getElementById("btn");
+        var content = document.getElementsByClassName("content");
+
+        for (var i = 0; i < content.length; i++) {
+            content[i].addEventListener("click", function() {
+                console.log(`click${i}`);
+                myFunction();
+            })
+        }
+
+        click.addEventListener("click", function() {
+            console.log("Click");
+            if (info.style.visibility !== 'hidden') {
+                click.style.background = 'green';
+                info.style.visibility = 'hidden';
+
+            } else {
+                click.style.background = 'red';
+                info.style.visibility = 'visible';
+            }
+
+        });
+        var x = document.getElementById("Demo");
+        // var menu = document.getElementById("menu");
+
+        function myFunction() {
+            //x.style.bottom = 0 + "px";
+            // x.style.right = 15 + menu.style.right + "%";
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

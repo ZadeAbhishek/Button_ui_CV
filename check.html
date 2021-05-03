@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            position: absolute;
+            margin: 20px;
+            width: auto;
+            height: 20px;
+            bottom: 10px;
+        }
+        /* The navbar */
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            height: 30px;
+            width: auto;
+        }
+        /* Navbar links */
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        #shortM {
+            padding: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .bbton {
+            padding: 10px;
+            padding-bottom: 10px;
+        }
+        
+        #menu {
+            position: absolute;
+            margin: 20px;
+            width: auto;
+            right: 0px;
+        }
+        
+        #demo {
+            position: absolute;
+            bottom: 50px;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CV demo</h2>
+    <div class="container">
+        <div class="topnav">
+            <button onclick="myFunction()"><span class="glyphicon glyphicon-search"></span></button>
+            <button onclick="myFunction()"><span class="glyphicon glyphicon-search"></span></button>
+            <button onclick="myFunction()"><span class="glyphicon glyphicon-search"></span></button>
+            <button onclick="myFunction()"><span class="glyphicon glyphicon-search"></span></button>
+            <button onclick="myFunction()"><span class="glyphicon glyphicon-search"></span></button>
+            <button onclick="myFunction()"><span class="glyphicon glyphicon-search"></span></button>
+        </div>
+    </div>
+    <div id="menu">
+        <div id="shortM">
+            <div class="bbton">
+                <button onclick="myFunction()"><span class="glyphicon glyphicon-search"></span></button>
+            </div>
+            <div class="bbton">
+                <button onclick="myFunction()"><span class="glyphicon glyphicon-search"></span></button>
+            </div>
+            <div class="bbton">
+                <button onclick="myFunction()"><span class="glyphicon glyphicon-search"></span></button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom">
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <script>
+        var button = document.getElementById("shortM");
+        var x = document.getElementById("Demo");
+        var menu = document.getElementById("menu");
+
+        function myFunction() {
+            x.style.width = 200 + "px";
+            x.style.height = 200 + "px";
+            x.style.overflow = "scroll";
+            //x.style.bottom = 0 + "px";
+            x.style.right = 15 + menu.style.right + "%";
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        //https://www.w3schools.com/w3css/w3css_dropdowns.asp
+    </script>
+</body>
+
+</html>
